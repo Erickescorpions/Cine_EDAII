@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Salas>
+ <id>A</id>
+ <nombre>titanes</nombre>
+ <nombre>shrek</nombre>
+ <nombre>valiente</nombre>
+ <id>B</id>
+ <nombre>spiderman</nombre>
+ <nombre>valiente</nombre>
+ <id>C</id>
+ <nombre>spiderman</nombre>
+ <nombre>mujero maravilla</nombre>
+ <id>D</id>
+ <nombre>kong</nombre>
+ <nombre>spiderman</nombre>
+ </Salas>

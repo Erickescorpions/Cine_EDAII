@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de cine: Fichero Fuente Map.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sistema de cine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Map.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Map_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// para los arreglos []</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pelicula_8hpp.html">Pelicula.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classMap.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMap.html">Map</a> </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classMap.html#ae00b1f478d27d81e4274788ef0b4f7af">   15</a></span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="classMap.html#ae00b1f478d27d81e4274788ef0b4f7af">size</a>; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classMap.html#af982f58df06f740b8d764a86c0b088d0">   17</a></span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="classMap.html#af982f58df06f740b8d764a86c0b088d0">len</a>; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classMap.html#aaaf7219cc9168b4c3d37cc43143d1cb1">   19</a></span>&#160;    <a class="code" href="classPelicula.html">Pelicula</a>* <a class="code" href="classMap.html#aaaf7219cc9168b4c3d37cc43143d1cb1">table</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classMap.html#abfe6d745dc465fd62bb78f078b6d8fc4">Map</a>( <span class="keywordtype">int</span> <a class="code" href="classMap.html#ae00b1f478d27d81e4274788ef0b4f7af">size</a> );</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classMap.html#aa403fbe09394ccf39747588f5168e3b2">~Map</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMap.html#a612079bf913fe016d4800b0c771290a0">Insert</a>( <a class="code" href="classPelicula.html">Pelicula</a> key );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classPelicula.html">Pelicula</a>* <a class="code" href="classMap.html#a9dcf18d2c058f2b3cbe7fa134fb0f735">Search</a>( std::string key ); </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMap.html#ac8a4926ec4ab0264b81845bbd95629ac">Remove</a>( std::string key );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::vector&lt; Pelicula &gt; <a class="code" href="classMap.html#a2934a7f2f7623dc9cdbdf0d1900787c9">getPeliculas</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">size_t</span> h( std::string cadena, <span class="keywordtype">int</span> <a class="code" href="classMap.html#ae00b1f478d27d81e4274788ef0b4f7af">size</a> );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">size_t</span> probe( <span class="keywordtype">long</span> <span class="keywordtype">int</span> i );</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassMap_html_af982f58df06f740b8d764a86c0b088d0"><div class="ttname"><a href="classMap.html#af982f58df06f740b8d764a86c0b088d0">Map::len</a></div><div class="ttdeci">int len</div><div class="ttdoc">Es el número actual de elementos en la tabla</div><div class="ttdef"><b>Definition:</b> Map.hpp:17</div></div>
+<div class="ttc" id="aclassMap_html_a2934a7f2f7623dc9cdbdf0d1900787c9"><div class="ttname"><a href="classMap.html#a2934a7f2f7623dc9cdbdf0d1900787c9">Map::getPeliculas</a></div><div class="ttdeci">std::vector&lt; Pelicula &gt; getPeliculas()</div><div class="ttdef"><b>Definition:</b> Map.cpp:112</div></div>
+<div class="ttc" id="aclassMap_html_abfe6d745dc465fd62bb78f078b6d8fc4"><div class="ttname"><a href="classMap.html#abfe6d745dc465fd62bb78f078b6d8fc4">Map::Map</a></div><div class="ttdeci">Map(int size)</div><div class="ttdoc">Construye un nuevo objeto Map.</div><div class="ttdef"><b>Definition:</b> Map.cpp:3</div></div>
+<div class="ttc" id="aclassMap_html_ae00b1f478d27d81e4274788ef0b4f7af"><div class="ttname"><a href="classMap.html#ae00b1f478d27d81e4274788ef0b4f7af">Map::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">Es el número máximo de elementos en la tabla.</div><div class="ttdef"><b>Definition:</b> Map.hpp:15</div></div>
+<div class="ttc" id="aclassMap_html_ac8a4926ec4ab0264b81845bbd95629ac"><div class="ttname"><a href="classMap.html#ac8a4926ec4ab0264b81845bbd95629ac">Map::Remove</a></div><div class="ttdeci">bool Remove(std::string key)</div><div class="ttdoc">Remueve un valor del tabla.</div><div class="ttdef"><b>Definition:</b> Map.cpp:88</div></div>
+<div class="ttc" id="aclassMap_html_aa403fbe09394ccf39747588f5168e3b2"><div class="ttname"><a href="classMap.html#aa403fbe09394ccf39747588f5168e3b2">Map::~Map</a></div><div class="ttdeci">~Map()</div><div class="ttdoc">Destruye el objeto Map.</div><div class="ttdef"><b>Definition:</b> Map.cpp:16</div></div>
+<div class="ttc" id="aPelicula_8hpp_html"><div class="ttname"><a href="Pelicula_8hpp.html">Pelicula.hpp</a></div></div>
+<div class="ttc" id="aclassMap_html_aaaf7219cc9168b4c3d37cc43143d1cb1"><div class="ttname"><a href="classMap.html#aaaf7219cc9168b4c3d37cc43143d1cb1">Map::table</a></div><div class="ttdeci">Pelicula * table</div><div class="ttdoc">Es la tabla hash.</div><div class="ttdef"><b>Definition:</b> Map.hpp:19</div></div>
+<div class="ttc" id="aclassMap_html"><div class="ttname"><a href="classMap.html">Map</a></div><div class="ttdef"><b>Definition:</b> Map.hpp:11</div></div>
+<div class="ttc" id="aclassMap_html_a9dcf18d2c058f2b3cbe7fa134fb0f735"><div class="ttname"><a href="classMap.html#a9dcf18d2c058f2b3cbe7fa134fb0f735">Map::Search</a></div><div class="ttdeci">Pelicula * Search(std::string key)</div><div class="ttdoc">Busca un valor dentro del tabla.</div><div class="ttdef"><b>Definition:</b> Map.cpp:67</div></div>
+<div class="ttc" id="aclassPelicula_html"><div class="ttname"><a href="classPelicula.html">Pelicula</a></div><div class="ttdef"><b>Definition:</b> Pelicula.hpp:6</div></div>
+<div class="ttc" id="aclassMap_html_a612079bf913fe016d4800b0c771290a0"><div class="ttname"><a href="classMap.html#a612079bf913fe016d4800b0c771290a0">Map::Insert</a></div><div class="ttdeci">bool Insert(Pelicula key)</div><div class="ttdoc">Inserta un nuevo valor al tabla.</div><div class="ttdef"><b>Definition:</b> Map.cpp:36</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

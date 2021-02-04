@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de cine: Fichero Fuente Sala.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sistema de cine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sala.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Sala_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Map_8hpp.html">Map.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pelicula_8hpp.html">Pelicula.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="Sala_8hpp.html#a032503e76d6f69bc67e99e909c8125da">   12</a></span>&#160;<span class="preprocessor">#define TABLE_SIZE 10 </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classSala.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSala.html">Sala</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classSala.html#adf478c6ed1cd625ca8d36ca28749638a">   17</a></span>&#160;    std::string <a class="code" href="classSala.html#adf478c6ed1cd625ca8d36ca28749638a">id</a>; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classSala.html#ae7c8d0e68b006f2352824d6433d339ec">   19</a></span>&#160;    <a class="code" href="classMap.html">Map</a>* <a class="code" href="classSala.html#ae7c8d0e68b006f2352824d6433d339ec">m</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classSala.html#afcf1b7b533e776b043ce8fb13c6268ca">Sala</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classSala.html#afcf1b7b533e776b043ce8fb13c6268ca">Sala</a>( std::string <span class="keywordtype">id</span> );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classSala.html#a7e88e00e39d9cc3941636d16234dfc67">~Sala</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSala.html#a3e60e907903e57b45fabe3e11a196fd4">add_pelicula</a>( <a class="code" href="classPelicula.html">Pelicula</a> p );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classPelicula.html">Pelicula</a>* <a class="code" href="classSala.html#aa8279065e7ad6525183d8c42ce4c70a4">get_pelicula</a>( std::string nombre );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassSala_html_adf478c6ed1cd625ca8d36ca28749638a"><div class="ttname"><a href="classSala.html#adf478c6ed1cd625ca8d36ca28749638a">Sala::id</a></div><div class="ttdeci">std::string id</div><div class="ttdoc">es el nombre de la sala</div><div class="ttdef"><b>Definition:</b> Sala.hpp:17</div></div>
+<div class="ttc" id="aclassSala_html_afcf1b7b533e776b043ce8fb13c6268ca"><div class="ttname"><a href="classSala.html#afcf1b7b533e776b043ce8fb13c6268ca">Sala::Sala</a></div><div class="ttdeci">Sala()</div><div class="ttdoc">Construye un nuevo objeto Sala.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:3</div></div>
+<div class="ttc" id="aMap_8hpp_html"><div class="ttname"><a href="Map_8hpp.html">Map.hpp</a></div></div>
+<div class="ttc" id="aclassSala_html_aa8279065e7ad6525183d8c42ce4c70a4"><div class="ttname"><a href="classSala.html#aa8279065e7ad6525183d8c42ce4c70a4">Sala::get_pelicula</a></div><div class="ttdeci">Pelicula * get_pelicula(std::string nombre)</div><div class="ttdoc">Obtiene una película.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:18</div></div>
+<div class="ttc" id="aclassSala_html_a7e88e00e39d9cc3941636d16234dfc67"><div class="ttname"><a href="classSala.html#a7e88e00e39d9cc3941636d16234dfc67">Sala::~Sala</a></div><div class="ttdeci">~Sala()</div><div class="ttdoc">Destruye el objeto Sala.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:11</div></div>
+<div class="ttc" id="aclassSala_html_a3e60e907903e57b45fabe3e11a196fd4"><div class="ttname"><a href="classSala.html#a3e60e907903e57b45fabe3e11a196fd4">Sala::add_pelicula</a></div><div class="ttdeci">void add_pelicula(Pelicula p)</div><div class="ttdoc">Añade una película a la sala.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:13</div></div>
+<div class="ttc" id="aclassSala_html"><div class="ttname"><a href="classSala.html">Sala</a></div><div class="ttdef"><b>Definition:</b> Sala.hpp:14</div></div>
+<div class="ttc" id="aclassSala_html_ae7c8d0e68b006f2352824d6433d339ec"><div class="ttname"><a href="classSala.html#ae7c8d0e68b006f2352824d6433d339ec">Sala::m</a></div><div class="ttdeci">Map * m</div><div class="ttdoc">es una tabla dónde se almacenan las películas de la sala</div><div class="ttdef"><b>Definition:</b> Sala.hpp:19</div></div>
+<div class="ttc" id="aPelicula_8hpp_html"><div class="ttname"><a href="Pelicula_8hpp.html">Pelicula.hpp</a></div></div>
+<div class="ttc" id="aclassMap_html"><div class="ttname"><a href="classMap.html">Map</a></div><div class="ttdef"><b>Definition:</b> Map.hpp:11</div></div>
+<div class="ttc" id="aclassPelicula_html"><div class="ttname"><a href="classPelicula.html">Pelicula</a></div><div class="ttdef"><b>Definition:</b> Pelicula.hpp:6</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
